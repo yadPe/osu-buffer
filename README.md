@@ -1,5 +1,7 @@
 # osu-buffer [![npm version](https://badge.fury.io/js/osu-buffer.svg)](https://badge.fury.io/js/osu-buffer) [![CodeFactor](https://www.codefactor.io/repository/github/itsyuka/osu-buffer/badge)](https://www.codefactor.io/repository/github/itsyuka/osu-buffer)
 
+Forked for [Beatconnect-client](https://github.com/yadPe/beatconnect_client)
+
 This package allows you to create a buffer that allows the readability of the packets or files of the game called osu!
 
 This does not automagically convert it, you do need to put some work to make it possible.
@@ -52,6 +54,7 @@ let buffer = new osuBuffer(); // You can supply a Node.js Buffer
 | ReadOsuString() | Reads the osu! encoded string (uses varint for length) | | `String` |
 | ReadVarint() | Reads an encoded variable integer | | `Number` |
 | ReadBoolean() | Reads a boolean | | `Boolean` |
+| ReadOsuDateDate() | Reads a .NET DateTime ticks | | `String` |
 
 ##### Write
 

@@ -1,4 +1,5 @@
 'use strict';
+const Long = require("long");
 
 class OsuBuffer {
     /**
@@ -158,6 +159,16 @@ class OsuBuffer {
      */
     ReadInt64() {
         return (this.ReadInt(4) << 8) + this.ReadInt(4);
+    }
+
+    /**
+     * Reads a .NET DateTime ticks
+     * @return {String}
+     */
+    ReadOsuDateTime() {
+        const l1 = this.ReadInt32();
+        const l2 = this.ReadInt32();
+        return new Long(l1, l2).toString();
     }
 
     /**
