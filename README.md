@@ -54,7 +54,7 @@ let buffer = new osuBuffer(); // You can supply a Node.js Buffer
 | ReadOsuString() | Reads the osu! encoded string (uses varint for length) | | `String` |
 | ReadVarint() | Reads an encoded variable integer | | `Number` |
 | ReadBoolean() | Reads a boolean | | `Boolean` |
-| ReadOsuDateDate() | Reads a .NET DateTime ticks | | `String` |
+| ReadOsuDateTime() | Reads a .NET DateTime ticks | | `String` |
 
 ##### Write
 
